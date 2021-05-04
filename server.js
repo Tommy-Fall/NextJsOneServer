@@ -1,11 +1,10 @@
 const express = require('express')
 const next = require('next')
 const bodyParser = require('body-parser')
-require('dotenv').config()
 
 // const port = parseInt(process.env.PORT, 10) || 8080
 const port = 80
-const dev = process.env.NODE_ENV == 'development'
+const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
