@@ -1,7 +1,7 @@
 import { server } from '../config'
 
 export default function Contact({message}) {
-  return <div>{message.message}</div>
+  return <div>{message.time}</div>
 }
 
 

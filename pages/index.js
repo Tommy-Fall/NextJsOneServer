@@ -19,7 +19,7 @@ export default function Home({ message }) {
           <a>Api</a>
         </Link>
       </li>
-      <li>{message.message}</li>
+      <li>{message.time}</li>
     </ul>
 
   )
